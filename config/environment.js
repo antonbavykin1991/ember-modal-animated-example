@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-modal-animated-example',
+    podModulePrefix: 'ember-modal-animated-example/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

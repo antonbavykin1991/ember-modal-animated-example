@@ -1,0 +1,53 @@
+@import "ember-modal-dialog/ember-modal-structure.css";
+@import "ember-modal-dialog/ember-modal-appearance.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-example {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+.modal-content button,
+.modal-example button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #0f9d58;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-content {
+  background: #fff;
+  width: 320px;
+  height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-content h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.modal-content p {
+  text-align: center;
+}

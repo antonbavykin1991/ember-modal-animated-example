@@ -1,0 +1,31 @@
+<div class="modal-example">
+  <button
+    type="button"
+    name="button"
+    onclick={{fn this.toggleModal true}}
+  >
+    Show animated Modal
+  </button>
+</div>
+
+
+{{#if this.isModalVisible}}
+  <ModalDialog
+    @onClose={{fn this.toggleModal false}}
+    @translucentOverlay={{true}}
+    @targetAttachment="center"
+  >
+    <div class="modal-content">
+      <h1>Title</h1>
+      <p>Some description ;)</p>
+      <button
+        type="button"
+        name="button"
+        onclick={{fn this.toggleModal false}}
+      >
+        Close
+      </button>
+    </div>
+
+  </ModalDialog>
+{{/if}}
